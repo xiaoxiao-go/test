@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人网站首页</title>
+	<link rel="stylesheet" href="index.css">
+	<script>
+	// 定义鼠标指向导航时，出现右边内容的事件
+		function jia1(){
+			var xianshiqu = document.getElementById('xianshiqu');
+			var xianshiqu1 = document.getElementById('xianshiqu1');
+			var xianshiqu2 = document.getElementById('xianshiqu2');
+			var xianshiqu3 = document.getElementById('xianshiqu3');
+			xianshiqu.style.display = 'block';
+			xianshiqu1.style.display = 'none';
+			xianshiqu2.style.display = 'none';
+			xianshiqu3.style.display = 'none';
+		}
+		function jia2(){
+			var xianshiqu = document.getElementById('xianshiqu');
+			var xianshiqu1 = document.getElementById('xianshiqu1');
+			var xianshiqu2 = document.getElementById('xianshiqu2');
+			var xianshiqu3 = document.getElementById('xianshiqu3');
+			xianshiqu1.style.display = 'block';
+			xianshiqu.style.display = 'none';
+			xianshiqu2.style.display = 'none';
+			xianshiqu3.style.display = 'none';
+		}
+		function jia3(){
+			var xianshiqu = document.getElementById('xianshiqu');
+			var xianshiqu1 = document.getElementById('xianshiqu1');
+			var xianshiqu2 = document.getElementById('xianshiqu2');
+			var xianshiqu3 = document.getElementById('xianshiqu3');
+			xianshiqu2.style.display = 'block';
+			xianshiqu1.style.display = 'none';
+			xianshiqu.style.display = 'none';
+			xianshiqu3.style.display = 'none';
+		}
+		function jia4(){
+			var xianshiqu = document.getElementById('xianshiqu');
+			var xianshiqu1 = document.getElementById('xianshiqu1');
+			var xianshiqu2 = document.getElementById('xianshiqu2');
+			var xianshiqu3 = document.getElementById('xianshiqu3');
+			xianshiqu3.style.display = 'block';
+			xianshiqu1.style.display = 'none';
+			xianshiqu2.style.display = 'none';
+			xianshiqu.style.display = 'none';
+		}
+		// 定义当鼠标离开导航部分时，右侧内容板块消失
+		function jia5(){
+			var xianshiqu = document.getElementById('xianshiqu');
+			var xianshiqu1 = document.getElementById('xianshiqu1');
+			var xianshiqu2 = document.getElementById('xianshiqu2');
+			var xianshiqu3 = document.getElementById('xianshiqu3');
+			xianshiqu3.style.display = 'none';
+			xianshiqu1.style.display = 'none';
+			xianshiqu2.style.display = 'none';
+			xianshiqu.style.display = 'none';
+		}
+		// 定义当鼠标指向右侧内容时，内容不会因为离开了导航部分而消失的事件
+		function jia6(){
+			var xianshiqu = document.getElementById('xianshiqu');
+			xianshiqu.style.display = 'block';
+		}
+		function jia7(){
+			var xianshiqu1 = document.getElementById('xianshiqu1');
+			xianshiqu1.style.display = 'block';
+		}
+		function jia8(){
+			var xianshiqu2 = document.getElementById('xianshiqu2');
+			xianshiqu2.style.display = 'block';
+		}
+		function jia9(){
+			var xianshiqu3 = document.getElementById('xianshiqu3');
+			xianshiqu3.style.display = 'block';
+		}
+		// 定义当鼠标离开了右侧内容部分时，右侧板块消失
+		function jia10(){
+			var xianshiqu = document.getElementById('xianshiqu');
+			var xianshiqu1 = document.getElementById('xianshiqu1');
+			var xianshiqu2 = document.getElementById('xianshiqu2');
+			var xianshiqu3= document.getElementById('xianshiqu3');
+			xianshiqu.style.display = 'none';
+			xianshiqu1.style.display = 'none';
+			xianshiqu2.style.display = 'none';
+			xianshiqu3.style.display = 'none';
+		}
+		
+
+	</script>
+</head>
+<body>
+	<div id="head">
+	<!-- 定义网站头像 -->
+		<div id="touxiang">
+			<img src="photo/touxiang.jpg" alt="">
+		</div>
+	<!-- 创建网站题目盒子 -->
+		<div id="timu">
+			<h1>天蝎座's小小浩</h1>
+		</div>
+	</div>
+	<!-- 添加背景音乐 -->
+	<div id="music" >
+			<audio src="music/music2.mp3" controls autoplay="play"></audio> 
+	</div>
+    
+	<!-- 创建导航栏 -->
+	<div id="menu">
+		<div class="danohanganniu" onmouseover="jia1()" onmouseout="jia5()"><p><a href="#">项目实战</a></p></div>
+		<div class="danohanganniu1" onmouseover="jia2()" onmouseout="jia5()"><p><a href="">金句良言</a></p></div>
+		<div class="danohanganniu2" onmouseover="jia3()" onmouseout="jia5()"><p><a href="">学习笔记</a></p></div>
+		<div class="danohanganniu3" onmouseover="jia4()" onmouseout="jia5()"><p><a href="">自身经历</a></p></div>
+<!-- 创建导航栏右侧显示区 -->
+<!-- 项目实战板块 -->
+		<div id="xianshiqu" onmouseover="jia6()" onmouseout="jia10()">
+		<h1 style="margin-left: 200px;">上手项目</h1>
+		<hr style="color: #666666">
+			<ol>
+				<li><a href="lvyou.html" target="_blank">旅游项目网站</a></li>
+				<li><a href="#">美食网站项目</a></li>
+				<li><a href="#">购物网站项目</a></li>
+
+			</ol>	
+		</div>
+<!--金句良言板块  -->
+		<div id="xianshiqu1" onmouseover="jia7()" onmouseout="jia10()">
+				<h1 style="color: red;margin-left: 300px;">希望以下的话对你有所启发！</h1>
+				<ul>
+					<li>一个人即使已登上顶峰，也仍要自强不息。---------------------------------------------------------罗素·贝克</li>
+					<li>最大的挑战和突破在于用人，而用人最大的突破在于信任人。---------------------------------------马云</li>
+					<li>自己活着，就是为了使别人过得更美好。------------------------------------------------------------雷锋</li>
+					<li>业精于勤，荒于嬉；行成于思，毁于随。------------------------------------------------------------韩愈</li>
+					<li>意志命运往往背道而驰，决心到最后会全部推倒。---------------------------------------------------莎士比亚</li>
+					<li>要使整个人生都过得舒适、愉快，这是不可能的，因为人类必须具备一种能应付逆境的态度。-------卢梭</li>
+					<li>知之者不如好之者，好之者不如乐之者。------------------------------------------------------------孔子</li>
+					<li>勇猛、大胆和坚定的决心能够抵得上武器的精良。---------------------------------------------------达·芬奇</li>
+					<li>学到很多东西的诀窍，就是一下子不要学很多。-----------------------------------------------------洛克</li>
+					<li>学而不思则罔，思而不学则殆。---------------------------------------------------------------------孔子</li>
+					<li>只有在人群中间，才能认识自己。-------------------------------------------------------------------德国</li>
+					<li>书到用时方恨少、事非经过不知难。-----------------------------------------------------------------陆游</li>
+					<li>熟读唐诗三百首，不会作诗也会吟。-----------------------------------------------------------------孙洙</li>
+					<li>生命不等于是呼吸，生命是活动。-------------------------------------------------------------------卢梭</li>
+					<li>伟大的事业，需要决心，能力，组织和责任感。-----------------------------------------------------易卜生</li>
+					<li>为中华之崛起而读书。------------------------------------------------------------------------------周恩来</li>
+					<li>问渠哪得清如许，为有源头活水来。-----------------------------------------------------------------朱熹</li>
+					<li>三军可夺帅也，匹夫不可夺志也。-------------------------------------------------------------------孔丘</li>
+					<li>路漫漫其修道远，吾将上下而求索。-----------------------------------------------------------------屈原</li>
+					<li>读书破万卷，下笔如有神。--------------------------------------------------------------------------杜甫</li>
+				</ul>
+		</div>
+<!--学习笔记板块  -->
+		<div id="xianshiqu2" onmouseover="jia8()" onmouseout="jia10()">
+			<ol>
+				<li><a href="datulunbo.html" target="_blank">原生js实现大图轮播案例</a></li>
+			</ol>			
+		</div>
+<!--自身经历板块  -->
+		<div id="xianshiqu3" onmouseover="jia9()" onmouseout="jia10()">
+			
+		</div>
+	</div>
+</body>
+</html>

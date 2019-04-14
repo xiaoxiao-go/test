@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如何用原生javascript实现大图轮播</title>
+	<style>
+		
+		body{
+			background: #00FF99;
+		}
+
+	</style>
+</head>
+<body>
+		<h2>上下轮播思路分析</h2>
+		<p style="color: orange">说白了，上下轮播就是把要轮播的图片放到一个盒子中(图片默认是换行的，所以不用设置浮动就在一列)，完了在放图片的盒子外给一个父盒子，固定父盒子，将父盒子的大小设置为一张图片的大小，给图片盒子添加定位(此时图片盒子的高度是所有图片高度之和，因为设置了定位)，接下来给父盒子设置overflow: hidden，将图片盒子超出的部分隐藏掉，最后只需要不停让装图片的盒子向上移动一个图片的高度即可完成</p>
+		<hr>
+		<p>以下都以我的例子进行：<br> <b>html部分:</b>先定义一个大盒子big，作为显示图片的窗口，在大盒子中再定义两个盒子，一个存放所要轮播的图片，另一个用于存放下方按钮，两者都是用 ul li 进行排列。<br>
+		<b>css部分:</b>先设置big盒子的样式，宽度高度设置为每张图片的大小。<b>注意：</b>因为big盒子是最后显示的区域，要设置来position: relative;进行定位。设置overflow: hidden属性为了隐藏big盒子外的内容。给图片盒子和按钮盒子要设置position: absolute。
+		<br>
+		<b>js部分:</b>对象.offsetTop是获取对象距离上方的距离，用于每次判断；setInterval是设置定时器；setAttribute是设置css属性，在按钮样式要用到；clearInterval是清除定时器的，因为要设置当鼠标放到图片上，图片自动滑动停止，离开后又要继续，所以需要设置定时器，onmouseover和onmouseout也要用到。
+		<br>
+		
+
+
+	
+</body>
+</html>

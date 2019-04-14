@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> 个人pc端练手项目</title>	
+	<link rel="stylesheet" href="lvyou.css">
+	<script src="jquery.min.js"></script>
+	<script src="lvyou.js"></script>
+	<script>
+	     /*为了让显示区能够重复单击，所以将每个显示区都写进去，单击自己的按钮时，别的都隐藏，当单击别的时，自己的也被隐藏，所以在此单击自己的时，又可以显示出来*/
+		function jia1(){
+			var xianshiqu1 =document.getElementById('xianshiqu1');
+			var xianshiqu2 =document.getElementById('xianshiqu2');
+			var xianshiqu3 =document.getElementById('xianshiqu3');
+			var xianshiqu4 =document.getElementById('xianshiqu4');
+			var xianshiqu5 =document.getElementById('xianshiqu5');
+				xianshiqu1.style.display="block";
+				xianshiqu2.style.display="none";
+				xianshiqu3.style.display="none";
+				xianshiqu4.style.display="none";
+				xianshiqu5.style.display="none";	
+		
+		}
+		function jia2(){
+			var xianshiqu1 =document.getElementById('xianshiqu1');
+			var xianshiqu2 =document.getElementById('xianshiqu2');
+			var xianshiqu3 =document.getElementById('xianshiqu3');
+			var xianshiqu4 =document.getElementById('xianshiqu4');
+			var xianshiqu5 =document.getElementById('xianshiqu5');
+				xianshiqu2.style.display="block";
+				xianshiqu1.style.display="none";
+				xianshiqu3.style.display="none";
+				xianshiqu4.style.display="none";
+				xianshiqu5.style.display="none";
+		}
+		function jia3(){
+			var xianshiqu1 =document.getElementById('xianshiqu1');
+			var xianshiqu2 =document.getElementById('xianshiqu2');
+			var xianshiqu3 =document.getElementById('xianshiqu3');
+			var xianshiqu4 =document.getElementById('xianshiqu4');
+			var xianshiqu5 =document.getElementById('xianshiqu5');
+				xianshiqu3.style.display="block";
+				xianshiqu2.style.display="none";
+				xianshiqu1.style.display="none";
+				xianshiqu4.style.display="none";
+				xianshiqu5.style.display="none";
+		}
+		function jia4(){
+			var xianshiqu1 =document.getElementById('xianshiqu1');
+			var xianshiqu2 =document.getElementById('xianshiqu2');
+			var xianshiqu3 =document.getElementById('xianshiqu3');
+			var xianshiqu4 =document.getElementById('xianshiqu4');
+			var xianshiqu5 =document.getElementById('xianshiqu5');
+				xianshiqu4.style.display="block";
+				xianshiqu2.style.display="none";
+				xianshiqu3.style.display="none";
+				xianshiqu1.style.display="none";
+				xianshiqu5.style.display="none";
+		}
+		function jia5(){
+			var xianshiqu1 =document.getElementById('xianshiqu1');
+			var xianshiqu2 =document.getElementById('xianshiqu2');
+			var xianshiqu3 =document.getElementById('xianshiqu3');
+			var xianshiqu4 =document.getElementById('xianshiqu4');
+			var xianshiqu5 =document.getElementById('xianshiqu5');
+				xianshiqu5.style.display="block";
+				xianshiqu2.style.display="none";
+				xianshiqu3.style.display="none";
+				xianshiqu4.style.display="none";
+				xianshiqu1.style.display="none";
+		}
+		function jia6(){
+			var dianhua1 = document.getElementById('dianhua1');
+				dianhua1.style.display = "block";
+		}
+		function jia7(){
+			var dianhua1 = document.getElementById('dianhua1');
+				dianhua1.style.display = "none";
+		}
+	</script>
+</head>
+<body>
+<!-- 按ctrl和斜杠/可以设置文字注释 -->
+<!-- 将字体的line-hight属性设置成与盒子高度一致，会使文字在垂直方向居中 -->
+<!-- 网站logo和开始搜索框 -->
+	<div id="sousuokuang">
+		
+		<form id="shurukuang"  action="sousuo">
+			<input type="text" style="width: 300px;height: 20px;border-color: orange;border-width: 3px;">
+			<input type="submit" style="width: 80px;height: 30px;background: orange;font-size: 15px;color: white;"  value="搜索">
+		</form>
+	</div>
+<!-- 导航条 -->
+	<div id="daohangtiao">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">机票</a></li>
+			<li><a href="#">酒店</a></li>
+			<li><a href="#">火车票</a></li>
+			<li><a href="#">用车</a></li>
+			<li><a href="#">门票</a></li>
+			<li><a href="#">金融</a></li>
+			<li><a href="#">攻略</a></li>
+		</ul>
+	</div>
+<!-- 大图轮播盒子 -->
+	<div id="datulunbo">
+		<div id="lunbo">
+			<div id="photo">
+				<ul>
+					<li alt="#0066FF" style="display: block;"><img style="height: 400px;width: 800px;" src="tu/datu.jpg" alt=""></li>
+					<li alt="#66FFFF"><img style="height: 400px;width: 800px;" src="tu/changcheng.jpg" alt=""></li>
+					<li alt="#33CCFF"><img style="height: 400px;width: 800px;" src="tu/jiudian.jpg" alt=""></li>
+					<li alt="#AA7700 "><img style="height: 400px;width: 800px;" src="tu/bingmayong.jpg" alt=""></li>
+					<li alt="#FFDDAA"><img style="height: 400px;width: 800px;" src="tu/haidao.jpg" alt=""></li>
+				</ul>
+			</div>
+			<div id="photobtn">
+				<ul>
+					<li class="bg"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div id="leftbtn"> <img style="width: 60px;height: 200px;" src="tu/left.png" alt=""> </div>
+			<div id="rightbtn"> <img style="width: 60px;height: 200px;" src="tu/right.png" alt=""> </div>
+		</div>
+	     <!-- 订票窗口 -->
+		 <div id="dingpiao">
+		 	<div id="xuanxiang">
+		 	 	<ul>
+		 	 		<li onclick="jia1()"><b>海外度假</b></li>
+		 	 		<li onclick="jia2()"><b>机票</b></li>
+		 	 		<li onclick="jia3()"><b>火车票</b></li>
+		 	 		<li onclick="jia4()"><b>游轮</b></li>
+		 	 		<li onclick="jia5()"><b>酒店</b></li>
+		 	 	</ul>
+		 		
+		 	</div>
+ 		    <!--第一个显示界面-->
+		 	<div id="xianshiqu1">
+		 		<img style="border-radius: 8px;margin-top:10px;margin-left: 10px;width: 380px;height: 150px;" src="tu/haidao.jpg" alt="">
+		 		<div id="haiwailvyou">
+		 			<div class="haiwai">
+		 				<h3 >马尔代夫</h3>
+		 				<img src="tu/retu1.gif" alt="">
+		 				<a href="#">阿雅达岛</a>
+		 				<a href="#">迪加莉岛</a>
+		 				<hr style="border-style: dashed;margin-top: 13px;">
+		 			</div>
+
+		 			<div class="haiwai">
+		 				 <h3 >欧洲&nbsp美洲</h3>
+		 				<a href="#">瑞士</a>
+		 				<a href="#">法国</a>
+		 				<a href="#">巴西</a>
+		 				<a href="#">美国</a>
+		 				<hr style="border-style: dashed;margin-top: 13px;">
+		 			</div>
+
+		 			<div class="haiwai">
+		 				<h3 >日本</h3>
+		 				<img src="tu/retu2.gif" alt="">
+		 				<a href="#">北海道</a>
+		 				<a href="#">大阪</a>
+		 				<a href="#">富士山</a>
+		 				<a href="#">冲绳</a>
+		 				<hr style="border-style: dashed;margin-top: 13px;">
+		 			</div>
+
+		 			<div class="haiwai">
+		 				<h3 >东南亚&nbsp南亚&nbsp泰国</h3>
+		 				<a href="#">普吉岛</a>
+		 				<a href="#">巴厘岛</a>
+		 				<a href="#">新加坡市</a>
+		 				<hr style="border-style: dashed;margin-top: 13px;">
+		 				
+		 			</div>
+
+		 			<div class="haiwai">
+		 				<h3>澳新&nbsp中东非洲</h3>
+		 				<a href="#">新西兰</a>
+		 				<a href="#">迪拜</a>
+		 				<a href="#">埃及</a>
+		 				<hr style="border-style: dashed;margin-top: 13px;">
+		 			</div>
+
+		 			<div class="haiwai">
+		 				 <h3 >亚洲</h3>
+		 				  <img src="tu/xin.gif" alt="">
+		 				<a href="#">韩国</a>
+		 				<a href="#">莫斯科</a>
+		 				<a href="#">巴基斯坦</a>
+		 				<hr style="border-style: dashed;margin-top: 13px;">
+		 			</div>
+		 		</div>
+		 	</div>
+		 	<!--第二个显示界面-->
+		 	<div id="xianshiqu2">
+		 		<h2 style="color: #008844;margin-top: 10px;text-align: center;;" >国内机票</h2>
+		 		<hr>
+		 		<!--定义机票表单-->
+		 		<form action="jipiaoxinxi" style="color: #888888">
+		 		<br>
+		 			<input style="margin-left: 45px;" type="radio" value="dan" name="fangshi">单程 
+		 			<input style="margin-left: 15px;" type="radio" value="fan" name="fangshi">往返 <br>
+				<br>
+		 			出发地:<input type="text" style="width: 100px;" >
+		 			目的地:<input type="text"  style="width: 100px;"> <br>
+		 		<br>
+		 			出发时间: <input type="text"> <br>
+				<br>
+				成人:
+		 		<select name="" id="">
+		 		         
+		 				<option value="">1</option>
+		 				<option value="">2</option>
+		 				<option value="">3</option>
+		 				<option value="">4</option>
+		 				<option value="">5</option>	
+
+		 		</select>
+		 		儿童:
+		 		<select style="margin-left: 15px;" name="" id="">
+		 		         
+		 				<option value="">1</option>
+		 				<option value="">2</option>
+		 				<option value="">3</option>
+		 				<option value="">4</option>
+		 				<option value="">5</option>	
+
+		 		</select>	
+		 		<input style="margin-left: 50px;width: 70px;height: 40px;background: orange;color: white;font-size: 18px;" type="submit" value="搜索">
+		 		</form>
+		 		<img style="width: 380px;height: 130px;margin-left: 10px;margin-top: 10px;" src="tu/feijipiao.jpg" alt="">
+		 	</div>
+		 	<!--第三个显示界面-->
+			<div id="xianshiqu3">
+		 		<h2 style="color: #008844;margin-top: 10px;text-align: center;;" >国内火车票</h2>
+		 		<hr>
+		 		<!--定义火车票表单-->
+		 		<form action="huochepiaoxinxi" style="color: #888888">
+		 		<br>
+		 			<input style="margin-left: 45px;" type="radio" value="dan" name="fangshi1">单程 
+		 			<input style="margin-left: 15px;" type="radio" value="fan" name="fangshi1">往返 <br>
+				<br>
+		 			出发地:<input type="text" style="width: 100px;" >
+		 			目的地:<input type="text"  style="width: 100px;"> <br>
+		 		<br>
+		 			出发时间: <input type="text"> <br>
+				<br>
+				成人:
+		 		<select name="" id="">
+		 		         
+		 				<option value="">1</option>
+		 				<option value="">2</option>
+		 				<option value="">3</option>
+		 				<option value="">4</option>
+		 				<option value="">5</option>	
+
+		 		</select>
+		 		儿童:
+		 		<select style="margin-left: 15px;" name="" id="">
+		 		         
+		 				<option value="">1</option>
+		 				<option value="">2</option>
+		 				<option value="">3</option>
+		 				<option value="">4</option>
+		 				<option value="">5</option>	
+
+		 		</select>	
+		 		<input style="margin-left: 50px;width: 70px;height: 40px;background: orange;color: white;font-size: 18px;" type="submit" value="搜索">
+		 		</form>
+		 		<img style="width: 380px;height: 130px;margin-left: 10px;margin-top: 10px;" src="tu/huoche.jpeg" alt="">
+		 	</div>
+		 	<!--第四个显示界面-->
+		 	<div id="xianshiqu4">
+		 	<h2 style="color: #008844;margin-top: 10px;text-align: center;;" >游轮信息</h2>
+		 	<hr>
+		 		<form action="">
+		 		出发地:
+		 			<select style="width: 100px;height: 30px;margin-top: 15px;" name="" id="">
+		 				<option value="">上海港</option>
+		 				<option value="">天津港</option>
+		 				<option value="">厦门港</option>
+		 				<option value="">大连港</option>
+		 				<option value="">青岛港</option>
+		 				<option value="">广州港</option>
+		 			</select> &nbsp&nbsp&nbsp
+		 		游轮航线:
+		 			<select style="width: 100px;height: 30px;margin-top: 15px;" name="" id="">
+		 				<option value="">日本</option>
+		 				<option value="">多瑙河</option>
+		 				<option value="">地中海</option>
+		 			</select>	 <br>
+		 		游轮品牌:
+		 			<select style="width: 100px;height: 30px;margin-top: 15px;" name="" id="">
+		 				<option value="">地中海游轮</option>
+		 				<option value="">夸克游轮</option>
+		 				<option value="">皇家加勒比游轮</option>
+		 			</select>	 
+		 			<input style="margin-left: 50px;width: 70px;height: 40px;background: orange;color: white;font-size: 18px;" type="submit" value="搜索">	
+		 		</form>
+		 	</div>
+		 	<!--第五个显示界面-->
+		 	<div id="xianshiqu5">
+		 		 <h2 style="color: #008844;margin-top: 10px;text-align: center;" >国内酒店预定</h2>
+		 	<hr>
+		 	<form action="">
+		 		目的地:
+		 			<select style="width: 100px;height: 30px;margin-top: 15px;" name="" id="">
+		 				<option value="">陕西</option>
+		 				<option value="">上海</option>
+		 				<option value="">北京</option>
+		 				<option value="">四川</option>
+		 				<option value="">重庆</option>
+		 				<option value="">广州</option>
+		 			</select> &nbsp&nbsp&nbsp
+		 		酒店关键字:	<input type="text" style="width: 100px;">
+		 		 <br> <br>
+		 		入住日期:  <input type="text" style="width: 50px;" >
+		 		离店日期:  <input style="margin-left: 5px;" type="text" style="width: 30px;">
+		 		<br>
+		 		<br>
+		 			<input style="margin-left: 300px;width: 80px;height: 30px;background: orange;color: white;font-size: 18px;" type="submit" value="搜索">	
+		 		</form>
+
+		 	</div>
+
+		 </div>
+
+         <!-- 今日通知窗口 -->
+		 <div id="tongzhi">
+		 <span style="font-size: 25px;margin-left: 100px;font-style: 宋体">
+		 今日通知	
+		 </span>
+		 <div class="tongzhitubiao"><img src="tu/tongzhi1.gif" alt=""><span><a href="#"   >【问题】关于取票窗口的加载问题</a></span></div>
+		 	<div class="tongzhitubiao"><img src="tu/tongzhi2.gif" alt=""><span><a href="#">【福利】端午出游特惠集合</a></span></div>
+		 	<div class="tongzhitubiao"><img src="tu/tongzhi3.gif" alt=""><span><a href="#">【海外】海外出行用车优惠券</a></span></div>
+		 	<div class="tongzhitubiao"><img src="tu/tongzhi4.gif" alt=""><span><a href="#">【折扣】国内春游踏青，第二人半价</a></span></div>
+		 	<div class="tongzhitubiao"><img src="tu/tongzhi5.gif" alt=""><span><a href="#">【活动】会员抽奖(最高享法国7日游)</a></span></div>
+		 	<hr style="margin-top: 5px;">
+		 	<h3 style="margin-left: 120px;">会员入口</h3>
+		 	<div id="huiyuanrukou">
+		 	      <img style="margin-left: 10px;margin-top: 10px;" src="tu/huiyuan.png" alt="">
+		 	     <div id="huiyuandenglu">
+		 	     	<b>会员名:</b><input style="width: 140px;" type="text">
+		 	     	<b>密码:</b>&nbsp&nbsp <input style="width:140px;" type="password">
+		 	     	<input style="margin-left: 115px;margin-top:5px;width: 80px;height: 30px;background: orange;color: white;" type="submit" value="登录">
+		 	     </div>
+                 <div id="tishi">
+                 	<hr>
+                 	<b>温馨提示:如有任何问题，请拨打咨询电话</b><br>
+                 	<img src="tu/dianhua1.png" alt="">
+                 	<div id="dianhua" onmousemove="jia6()" onmouseout="jia7()" >
+                 		<b>24h在线客服:18729479646</b> 
+                 	</div>
+                 	<div id="dianhua1">
+                 		
+                 		<b>国内:4009 7845 787  </b>	<br>
+                 		<b>	国外:+0086 298 6445 265</b>
+                 		
+                 	</div>
+                 </div>
+		 	     	
+		 	</div>
+		 </div>
+		 
+	</div>
+<!-- 六个今日特惠板块 -->
+	<div id="tuijian">
+	 	<h2 >今日特惠</h2>
+	 	<div class="tehui">
+	 		<img class="tu" src="tu/bingmayong.jpg" alt="sorry,please wait to try">
+			<div class="title">【兵马俑】</div> 
+			1974年3月11日，兵马俑被发现 <br>
+			1987年，秦始皇陵及兵马俑坑被联合国教科文组织批准列入《世界遗产名录》，并被誉为“世界第八大奇迹”。<br>先后已有200多位国家领导人参观访问，成为中国古代辉煌文明的一张金字名片。<br>  
+			<span class="price">￥ 2644</span><span class="myd">满意度：87%</span> 
+			<div class="biaoqian">省内短线</div> 
+	 	</div>
+	 	<div class="tehui1">
+	 		<img class="tu" src="tu/changcheng.jpg" alt="sorry,please wait to try">
+	 		<div class="title">【长城】</div>
+	 		长城始建于春秋战国时期，始修于燕王，历史长达2000多年。今天所指的万里长城多指明代修建的长城，它东起鸭绿江，西至内陆地区甘肃省的嘉峪关。<br><br><br>
+	 		<span class="price">￥ 2300</span><span class="myd">满意度：92%</span>
+	 		<div class="biaoqian">国内短线</div> 
+	 	</div>
+	 	<div class="tehui2">
+	 		 <img class="tu" src="tu/huashan.jpg" alt="sorry,please wait to try">
+	 		 <div class="title">【华山】</div>
+	 		 华山(Mount Hua)古称"西岳"，雅称"太华山"，为中国著名的五岳之一，中华文明的发祥地，"中华"和"华夏"之"华"，就源于华山 。华山是第一批国家重点风景名胜区，国家AAAAA级旅游景区，全国重点文物保护单位，国家地质公园。<br><br>
+	 		 <span class="price">￥ 1800</span><span class="myd">满意度：90%</span>
+	 		 <div class="biaoqian">省内短线</div> 
+	 	</div>
+	 	<div class="tehui3">
+	 		<img class="tu" src="tu/guanshanmuchang.jpg" alt="sorry,please wait to try">
+	 		<div class="title">【关山牧场】</div>
+	 		关山草原(Guanshan Grassland)位于宝鸡市陇县西南部，距宝鸡市区134公里、西安市300公里，是中国西北内陆地区唯一的以高山草甸为主体的具有欧式风情的省级风景名胜区，国家AAAA级旅游景区。 <br> <br>
+	 		<span class="price">￥ 2100</span><span class="myd">满意度：88%</span>
+	 		<div class="biaoqian">省内短线</div> 
+	 	</div>
+	 	<div class="tehui4">
+	 		<img class="tu" src="tu/jiuzhaigou.jpg" alt="sorry,please wait to try">
+	 		<div class="title">【九寨沟】</div>
+	 		九寨沟国家级自然保护区位于四川省，是中国第一个以保护自然风景为主要目的的自然保护区，也是中国著名风景名胜区和全国文明风景旅游区示范点，被纳入《世界自然遗产名录》、“人与生物圈”保护网络。<br> <br>
+	 		<span class="price">￥ 2500</span><span class="myd">满意度：88%</span>
+	 		<div class="biaoqian">国内短线</div> 
+	 	</div>
+	 	<div class="tehui5">
+	 		<img class="tu" src="tu/zhouhongmiao.jpg" alt="sorry,please wait to try">
+	 		<div class="title">【周公庙】</div>
+	 		岐山周公庙，全国重点文物保护单位，国家AAAA级旅游景区，是中国同类建筑中存世规模最大，形制最完整的周公庙。位于陕西省岐山县城，面积约62万平方米。《诗经》中描述此地为:"有卷者阿，飘风自南"。<br> <br>
+	 		<span class="price">￥ 1600</span><span class="myd">满意度：88%</span>
+	 		<div class="biaoqian">省内短线</div> 
+	 	</div>
+		
+	</div>
+<!-- 旅游局logo -->
+	<div id="lvyouju">
+	   	<h2>旅游局合作</h2>
+	   	<hr>
+	   	<img class="logo" src="tu/julogo.jpg" alt="">
+	   	<img class="logo" src="tu/julogo1.jpg" alt="">
+	   	<img class="logo" src="tu/julogo2.jpg" alt="">
+	   	<img class="logo" src="tu/julogo3.png" alt="">
+	   	<img class="logo" src="tu/julogo4.jpg" alt="">
+	   	<img class="logo" src="tu/julogo5.jpg" alt="">
+	   	<img class="logo" src="tu/julogo6.jpg" alt="">
+	   	<img class="logo" src="tu/julogo7.jpg" alt="">
+	   	<img class="logo" src="tu/julogo8.png" alt="">
+	   	<img class="logo" src="tu/julogo9.gif" alt="">
+	   	<img class="logo" src="tu/julogo10.jpg" alt="">	
+	</div>
+<!-- 底部大盒子 -->
+	<div id="bottom">
+	<!-- 四个小盒子 -->
+		<div id="left">
+		    <h3>查服务</h3><br>
+		    <hr style="border-style: dashed;"> <br>
+		 	<ul>
+		 		<li><a href="#">火车时刻表</a></li>
+		 		<li><a href="#">航班查询</a></li>
+		 		<li><a href="#">景点票时查询</a></li>
+		 	</ul>
+			
+		</div>
+
+		<div id="middle">
+			<h3>旅游FAQ</h3><br>
+		    <hr style="border-style: dashed;"> <br>
+		 	<ul>
+		 		<li><a href="#">旅游合同签订方式</a></li>
+		 		<li><a href="#">旅游线路制定准则</a></li>
+		 		<li><a href="#">旅游保险的种类</a></li>
+		 	</ul>
+		</div>
+
+		<div id="right">
+			 <h3>优惠政策</h3><br>
+		    <hr style="border-style: dashed;"> <br>
+		 	<ul>
+		 		<li><a href="#">团购</a></li>
+		 		<li><a href="#">家庭票</a></li>
+		 		<li><a href="#">情侣票</a></li>
+		 	</ul>
+		</div>
+
+		<div id="you">
+			<h3>联系电话</h3><br>
+		    <hr style="border-style: dashed;"> <br>
+		 	<ul>
+		 		<li>联系电话:18729479646</li>
+		 		<li>邮箱:2292269540@qq.com</li>
+		 		<li>地址:陕西省宝鸡市桥南街道</li>
+		 	</ul>
+		</div>
+		<!-- 版权信息板块 -->
+		<div id="banquan">
+		<hr>
+			Copyright © 2018-2019 宝鸡文理学院个人 贾志浩 | 营业执照 | 陕ICP证：*********** | 陕ICP备********号 | 宝鸡旅游网
+		</div>
+	</div>
+	<div id="nav">
+		<div id="lefttubiao">
+			<img src="tu/gongjiao.png" alt="">
+			<img src="tu/feiji.png" alt="">
+			<img src="tu/lunchuan.png" alt="">
+			<img src="tu/lvguan.png" alt="">
+			<img src="tu/meishi.png" alt="">
+		</div>
+		<div id="righttubiao">
+			 <ul>
+			 	<li><a href="#"><b>公交信息</b></a></li>
+			 	<li><a href="#"><b>飞机信息</b></a></li>
+			 	<li><a href="#"><b>游轮信息</b></a></li>
+			 	<li><a href="#"><b>酒店信息</b></a></li>
+			 	<li><a href="#"><b>餐厅信息</b></a></li>
+			 </ul>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
